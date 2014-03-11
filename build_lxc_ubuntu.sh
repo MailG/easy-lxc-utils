@@ -49,6 +49,10 @@ elif [ "${releasenum}" = "1204" ]; then
 	release=precise
 elif [ "${releasenum}" = "1210" ]; then
 	release=quantal
+elif [ "${releasenum}" = "1304" ]; then
+	release=raring
+elif [ "${releasenum}" = "1310" ]; then
+	release=saucy
 else
 	releasenum=${CURRUNT_RELEASE}
 	release=$(cat /etc/lsb-release | grep CODE | sed "s#.*=\(.*\)#\1#g")
