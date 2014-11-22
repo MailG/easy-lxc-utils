@@ -53,6 +53,8 @@ elif [ "${releasenum}" = "1304" ]; then
 	release=raring
 elif [ "${releasenum}" = "1310" ]; then
 	release=saucy
+elif [ "${releasenum}" = "1404" ]; then
+	release=trusty
 else
 	releasenum=${CURRUNT_RELEASE}
 	release=$(cat /etc/lsb-release | grep CODE | sed "s#.*=\(.*\)#\1#g")
